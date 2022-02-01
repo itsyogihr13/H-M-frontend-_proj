@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="https://tse2.mm.bing.net/th?id=OIP.tIpRgOXKcINGu9VwvaNkBwAAAA&pid=Api&P=0&w=300&h=300">
+    <style>
+    #header{
+        width: 100%;
+        height: 200px;
+    
+    }
+    #nav {
+      width: 100%;
+      height: 25%;
+      /* margin-top: 35px; */
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      font-family: "Quicksand", sans-serif;
+    
+      padding-top:10px ;
+    
+    }
+    #right {
+      display: flex;
+      /* border: 1px solid black; */
+    }
+    #right>div{
+        padding: 20px;
+    }
+    #left {
+      display: flex;
+    
+    }
+    #left>div{
+        padding: 10px 20px;
+    }
+    #left>div:nth-child(1){
+        padding-top:20px
+    }
+    #left>div:nth-child(2){
+        padding-top:20px
+    }
+    
+    /* miidle log and etc.. */
+    #icon3{
+        height: 40px;
+    }
+    nav ul.menu-area{
+            /* color: red; */
+            padding: 40px 40px 0 40px;
+            background: white;
+            text-align: left;
+            border-bottom: 5px solid;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.6);
+            z-index: 1;
+            position:absolute;
+            display:flex;
+            flex-wrap: wrap;
+            width: 1170px;
+            top: -9999px;
+            left: 0;
+        }
+    nav ul li:hover ul.menu-area{
+            background-color: pink;
+            width: 150%;
+            margin-left: -35%;
+            font-size: smaller;
+            top:100%;
+        }
+        nav ul.menu-area ul li{
+            padding: 0 10px;            
+            display:block;
+        }
+        nav ul.menu-area ul li a{
+            margin-top: 10px;
+            /* color:grey; */
+            text-transform: none;
+        }
+    #head {
+        width: 100%;
+    }
+    #logo {
+      width: 60px;
+      height: 70px;
+      margin: auto;
+    }
+    img {
+      width: 100%;
+    }
+    #category {
+      width: 100%;
+      display: flex;
+      font-size: 18px;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+    }
+    #category>div{
+        padding: 15px;
+    }
+    
+    
+    #search {
+      width: 100%;
+      margin-left: 50px;
+    }
+    #search > div:nth-child(1) {
+      display: flex;
+      width: 180px;
+      height: 30px;
+    }
+    #searchbutton {
+      background-color: #faf9f8;
+      border: transparent;
+      background-repeat: no-repeat;
+      background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%3Ctitle%3EFoundation%20%2F%20Icon%20%2F%2024%20%2F%20Control%20%2F%20Search%3C%2Ftitle%3E%3Cdefs%3E%3Cpath%20d%3D%22M11%2019a8%208%200%201%200%200-16%208%208%200%200%200%200%2016zm0%201a9%209%200%201%201%200-18%209%209%200%200%201%200%2018zm6.707-3l4.243%204.243-.707.707L17%2017.707l.707-.707z%22%20id%3D%22prefix__a%22%2F%3E%3C%2Fdefs%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cpath%20d%3D%22M0%200h24v24H0z%22%2F%3E%3Cuse%20fill%3D%22%23222%22%20xlink%3Ahref%3D%22%23prefix__a%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+    }
+    #icon4 {
+      width: 10px;
+      background-repeat: no-repeat;
+    }
+    input {
+      border: transparent;
+      background-color: transparent;
+    }
+    
+    hr {
+      background-color: rgb(9, 9, 10);
+    }
+    #head > div:nth-child(2) {
+      margin-left: 350px;
+      color: rgb(110, 93, 72);
+    }
+    
+    #bag{
+        background-color: rgb(206, 169, 169);
+        color: black;
+        border: transparent;
+    }
+    #bodydiv{
+        width: 100%;
+        height: 30%;
+    }
+    
+    #container{
+        
+        width: 1000px;
+        margin: auto;
+        text-align: center;
+    }
+    #container>div{
+        margin-top: 20px;
+    }
+    #firstphoto{
+        cursor: pointer;
+    }
+    
+    h2{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 35px;
+    }
+    
+    #maindiv{
+       width: 100%;
+       height: 100%;
+       padding-top: 50px;
+       
+    }
+    #filterdiv{
+        width: 60%;
+        height: 10% ;
+        padding: 20px;
+        margin-left: 40px;
+        margin-bottom: 30px;
+     
+    }
+    
+    #itemsdiv{
+        display: grid; 
+        height: 70%;
+        grid-template-columns: repeat(3,auto);
+        grid-gap: 30px;
+        justify-content: center;
+       
+    }
+    
+    #itemsdiv>div{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        width: 250px;
+        height: 400px;
+        padding: 10px;
+        text-align: center;
+        border-radius: 15px;
+        font-size: 13px;
+    }
+    img{
+        width: 100%;
+        height: 70%;
+        border-radius:10px;
+    }
+    button{
+        background-color: rgb(43, 175, 43);
+        color: white;
+        padding: 10px;   
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    #filterprice{
+        padding: 10px 20px;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        border-radius: 30px;
+    }
+    #filtername{
+        padding: 10px 20px;
+        background-color: rgb(0, 0, 0);
+        color: rgb(253, 253, 253);
+        border-radius: 30px;
+    }
+    #filterbrand{
+        padding: 10px 20px;
+        background-color: rgb(248, 248, 250);
+        color: rgb(0, 0, 0);
+        border-radius: 30px; 
+    }
+    #byname{
+        padding: 10px 20px;
+        background-color: rgb(248, 250, 246);
+        color: rgb(3, 3, 3);
+        border-radius: 30px;
+    }
+    #content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+    #offers{
+        width: 25%;
+        height: 100%;
+        padding-left: 20px;
+    
+    }
+    
+    @media only screen and (min-width:500px) and (max-width:900px){
+        #itemsdiv{
+        grid-template-columns: repeat(2,auto);   
+    }
+    #content{
+     display: grid;
+       
+    }
+    }
+    
+    @media only screen and (min-width:0px) and (max-width:499px){
+        #itemsdiv{
+        grid-template-columns: repeat(1,auto);   
+    }
+    #content{
+     display: grid;
+        
+    }
+        
+    }
+    </style>
+    
+    </head>
+    <body >
+        <div id="header">
+    
+              
+            <div id="nav"> 
+                <div id="right">
+                    <div>Customer Service</div>
+                    <div>Newsletter</div>
+                    <div>Find a store</div>
+                    <div>ooo</div>
+                </div> 
+                <div id="left">
+                     <div id="icon1">Sign In</div> 
+                     <div id="icon2">Favourite</div>
+                    <div id="icon3"> 
+                
+                        <button id="bag" onclick="GoTobag()">Shopping Bag<h5 id="bagcount"></h5></button>
+                   
+                </div>
+                </div>
+            
+            </div>
+    
+    
+            <div id="head">
+            
+                <div id="logo"> 
+                    <img src="data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%22370%22%20height%3D%22244%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%3Ctitle%3E1.%20Foundation%2FLogotypes%2FH%26amp%3BM%2FRed%3C%2Ftitle%3E%3Cdefs%3E%3Cpath%20d%3D%22M259.895%207.413c13.424-6.618%2020.087-5.737%2020.232.946.19%208.7-1.098%2020.23-2.016%2028.604-4.983%2045.423-13.32%2082.543-13.954%20129.19%2021.94-56.802%2040.345-96.278%2064.03-144.909%207.53-15.47%2012.325-12.593%2018.503-15.343%2024.082-10.715%2024.984-4.133%2021.837%208.95-11.686%2048.552-41.54%20201.376-46.114%20224.907-1.328%206.807-8.715%203.923-10.644%201.26-8.57-11.85-18.225-12.036-17.14-19.919%205.37-39.233%2024.71-137.666%2029.75-160.863-25.719%2052.696-52.37%20118.566-66.053%20155.914-2.907%207.931-8.188%207.35-11.48%201.546-4.63-8.15-13.61-12.312-15.093-21.943-4.702-30.628%205.37-89.003%206.773-125.936-13.994%2040.342-37.49%20118.67-47.782%20154.057-4.256%2014.643-18.382%2012.253-14.627-2.018%2015.642-59.389%2049.326-164.425%2063.915-202.198%203.427-8.874%2012.406-8.569%2019.863-12.245zM174.6.115c4.26%201.025%203.913%206.05%201.31%2012.912-7.682%2020.247-18.335%2046.847-30.516%2078.212%207.658-.874%2011.811-1.17%2011.811-1.17%2010.994-1.358%2013.041%204.139%209.946%209.99-2.466%204.664-5.436%201.554-15.724%2016.89-5.796%208.642-15.259%2010.924-20.515%2012.076-12.662%2033.523-26.23%2070.916-39.415%20110.77-1.919%205.804-7.524%204.532-9.209%202.174-6.192-8.647-10.758-8.933-15.558-15.927-.577-1.132-1.706-2.672-1.027-5.448%203.53-14.425%2012.901-44.067%2027.156-83.091-17.958%203.892-37.387%208.076-45.408%209.94-9.626%2025.445-19.014%2050.967-27.908%2076.18-5.518%2015.64-19.88%2012.617-14.84-2.165%208.028-23.548%2016.89-48.004%2025.776-71.72-9.948-1.063-13.313-8.088-18.873-13.958-2.147-2.267-6.828-1.948-9.12-5.127-4.123-5.711-3.712-8.248%205.81-10.996a955.318%20955.318%200%200%201%2037.464-9.998c16.09-41.524%2030.63-77.144%2038.38-96.151C90.114-1.138%20105.514.226%2099.664%2014.674c-11.889%2029.363-24.079%2059.867-36.11%2090.799a880.98%20880.98%200%200%201%2044.748-8.87%202312.644%202312.644%200%200%201%2034.62-83.968c.845-1.937%203.31-4.678%205.878-5.118%208.092-1.385%2021.251-8.498%2025.8-7.402zm-27.552%20190.077c1.265-.773%202.524-1.715%203.767-2.75a756.514%20756.514%200%200%201-2.82-8.468%20139.528%20139.528%200%200%200-2.752%203.638c-5.386%207.396-2.197%2010.028%201.805%207.58zm7.167-35.065c6.67-7.53-6.516-10.681-3.48.836.17.65.382%201.413.62%202.254a98.19%2098.19%200%200%200%202.86-3.09zm6.941%2022.695c6.602-5.721%2012.908-.046%206.38%209.628-1.404%202.08-2.99%204.318-4.729%206.522a193.17%20193.17%200%200%200%202.146%205.877c3.375%208.654-5.488%2010.824-8.345%203.656-.25-.626-.51-1.297-.778-1.995-5.387%204.772-11.618%207.777-18.275%205.707-10.954-3.407-13.74-18.83-3.514-30.711%204.103-4.767%207.191-8.074%209.771-10.716a251.947%20251.947%200%200%201-1.819-6.17c-1.328-4.81-2.527-10.416%202.287-16.13%209.027-10.712%2029.971-1.203%2019.377%2015.289-2.552%203.972-5.535%207.724-8.647%2011.527a979.555%20979.555%200%200%200%203.26%2010.18%2078.304%2078.304%200%200%201%202.886-2.664z%22%20id%3D%22prefix__a%22%2F%3E%3C%2Fdefs%3E%3Cuse%20fill%3D%22%23E50010%22%20xlink%3Ahref%3D%22%23prefix__a%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E" alt="logo"></div>
+                <div>
+                    <nav>
+                        <!-- <ul style="font-size: 14px; font-weight:500;margin-left: 100%;"> -->
+                        <ul>
+                            <li class = "dropdown">
+                                <a href="#">Ladies</a>
+                                <ul class="menu-area">                        
+                                    <ul>
+                                        <h3>New arrival</h3>
+                                        <li><a href="ladiesSection.html">view all</a></li>
+                                        <li><a href="ladiesSection.html">clothes</a></li>
+                                        <li><a href="ladiesSection.html">view all</a></li>
+                                        <li><a href="ladiesSection.html">clothes</a></li>
+                                        <h3>Trending Now</h3>
+                                        <li><a href="ladiesSection.html">Jackets from Rs.2299</a></li>
+                                        <li><a href="ladiesSection.html">Seasonless Swimwear</a></li>
+                                        <li><a href="ladiesSection.html">Gift Guide</a></li>
+                                        <li><a href="ladiesSection.html">Party Edits</a></li>
+                                        <li><a href="ladiesSection.html">Music , Movies and Logos</a></li>
+                                        <li><a href="ladiesSection.html">A Circular design story</a></li>
+                                        <h3>Deals</h3>
+                                        <li><a href="ladiesSection.html">Socks-Buy 2 get 1 free!</a></li>
+                                    </ul>
+                                    <ul>
+                                        <h3>Shop by Product</h3>
+                                        <li><a href="ladiesSection.html">view all</a></li>
+                                        <li><a href="ladiesSection.html">Tops & T-shirts</a></li>
+                                        <li><a href="ladiesSection.html">Dresses</a></li>
+                                        <li><a href="ladiesSection.html">Shirts & Blouses</a></li>
+                                        <li><a href="ladiesSection.html">Sweatshirts & Hoodies</a></li>
+                                        <li><a href="ladiesSection.html">Cardigons & Sweaters</a></li>
+                                        <li><a href="ladiesSection.html">Knitwears</a></li>
+                                        <li><a href="ladiesSection.html">Blazzers</a></li>
+                                        <li><a href="ladiesSection.html">Jacket & Coats</a></li>
+                                        <li><a href="ladiesSection.html">Basics</a></li>
+                                        <li><a href="ladiesSection.html">Trousers</a></li>
+                                        <li><a href="ladiesSection.html">Jeans</a></li>
+                                        <li><a href="ladiesSection.html">Nightwear</a></li>
+                                        <li><a href="ladiesSection.html">Laungwear</a></li>
+                                        <li><a href="ladiesSection.html">Sportswear</a></li>
+                                        <li><a href="ladiesSection.html">Shorts</a></li>
+                                        <li><a href="ladiesSection.html">Skirts</a></li>
+                                        <li><a href="ladiesSection.html">Jumpsuits</a></li>
+                                        <li><a href="ladiesSection.html">Swimwear & Beachwear</a></li>
+                                        <li><a href="ladiesSection.html">Shoes</a></li>
+                                        <li><a href="ladiesSection.html">Accessories</a></li>
+                                        <li><a href="ladiesSection.html">Lingerie</a></li>
+                                        <li><a href="ladiesSection.html">Socks & Tights</a></li>
+                                        <li><a href="ladiesSection.html">Maternity Wear</a></li>
+                                        <li><a href="ladiesSection.html">Plus Size</a></li>
+                                        <li><a href="ladiesSection.html">Dog Clothes & Accessories</a></li>
+                                        <li><a href="ladiesSection.html">Premium Section</a></li>
+                                    </ul>
+                                    </ul>
+                                    </li>
+                                    </ul>
+                                    </nav>
+<!--                     
+                <div id="category">
+                    <div><span>Ladies</span></div>
+                    <div><span>Men</span></div>
+                    <div><span>Baby</span></div>
+                    <div><span>kids</span></div>
+                    <div><span>divided</span></div>
+                    <div><span>Sale</span></div>
+                    <div><span>Sustainability</span></div> -->
+                          
+                <!-- <div id="search">
+                <div>  <button id="searchbutton">
+                        <div id="icon4"> </div>  
+                    </button>
+                    <input type="search" placeholder="Search products"/>
+                </div>
+                  <hr> 
+                </div>
+             </div> -->
+</body>
+</html>

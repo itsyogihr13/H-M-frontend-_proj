@@ -1,0 +1,72 @@
+#main {
+  display: flex;
+}
+#data {
+  /* border: 1px solid black; */
+  margin-left: 100px;
+}
+#add-to-cart {
+  /* border: 1px solid black; */
+  width: 340px;
+  height: 300px;
+  margin-left: 180px;
+  margin-top: 130px;
+}
+#btn-adc {
+  margin-top: 40px;
+  padding: 14px 150px;
+  background: black;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+}
+.adc-select {
+  background: white;
+  padding: 14px 125px;
+}
+#box1 {
+  /* background: white; */
+  /* border: 1px solid black; */
+  margin-top: 50px;
+  height: 350px;
+  width: 1050px;
+  margin-left: 100px;
+}
+#box2 {
+  /* border: 1px solid red; */
+  height: 300px;
+  width: 700px;
+  font-size: 18px;
+}
+#container3 {
+  display: flex;
+  /* border: 1px solid black; */
+  width: 1250px;
+  height: 500px;
+  margin: auto;
+  margin-bottom: 120px;
+}
+#container4 {
+  display: flex;
+  /* border: 1px solid black; */
+  width: 1250px;
+  height: 500px;
+  margin: auto;
+}
+.dummy {
+  /* border: 1px solid black; */
+  width: 300px;
+  height: 400px;
+}
+#dummy-main {
+  margin-left: 8px;
+  /* border: 1px solid black; */
+  width: 300px;
+  height: 500px;
+}
+h2 {
+  margin-left: 130px;
+  font-family: "HM Sans Semi Bold", "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro", Osaka, メイリオ, Meiryo, "ＭＳ Ｐゴシック",
+    "MS PGothic", sans-serif;
+}
